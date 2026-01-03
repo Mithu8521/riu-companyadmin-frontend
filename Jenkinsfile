@@ -6,11 +6,14 @@ pipeline {
         DEPLOY_HOST = "13.205.115.213"
         DEPLOY_PATH = "/var/www/html/cf.novuscap.co"
         SSH_KEY = "/var/lib/jenkins/.ssh/id_ed25519"
+
+        // 🔥 FIX: Increase Node.js memory
+        NODE_OPTIONS = "--max-old-space-size=4096"
+
         SUCCESS_MESSAGE = "✅ Deployment done"
     }
 
     triggers {
-        // Jenkins will check GitHub every 2 minutes
         pollSCM('H/2 * * * *')
     }
 
@@ -27,7 +30,7 @@ pipeline {
 
         stage('Deploy Code') {
             steps {
-                echo "Deploying React frontend to EC2..."
+                echo "Deploying React frontend to EC2 as ubuntu user..."
 
                 sh """
                 # Prepare directory on server
@@ -37,14 +40,15 @@ pipeline {
                     rm -rf ${DEPLOY_PATH}/*
                 '
 
-                # Copy source code to server
-                scp -i ${SSH_KEY} -r * ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/
+                # Copy code to server
+                scp -i ${SSH_KEY} -r . ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/
 
-                # Build React app on server
+                # Install & build on server with increased heap
                 ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} '
                     cd ${DEPLOY_PATH}
 
                     echo "Installing dependencies..."
+                    export NODE_OPTIONS=--max-old-space-size=4096
                     npm install --force
 
                     echo "Building React app..."
