@@ -14,6 +14,7 @@ pipeline {
     }
 
     triggers {
+        // Auto-detect GitHub changes (no webhook)
         pollSCM('H/2 * * * *')
     }
 
@@ -33,9 +34,22 @@ pipeline {
                 echo "Installing dependencies and building React app..."
 
                 sh '''
+                    set -e
+
+                    echo "Node version:"
+                    node -v
+                    npm -v
+
                     export NODE_OPTIONS=--max-old-space-size=4096
+
+                    echo "Installing dependencies..."
                     npm install --force
-                    npm run build
+
+                    echo "Building React app (CI disabled)..."
+                    CI=false npm run build
+
+                    echo "Verifying build folder..."
+                    ls -lah build
                 '''
             }
         }
@@ -47,11 +61,12 @@ pipeline {
                 sh """
                 # Prepare server directory
                 ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} '
+                    echo "Preparing deployment directory..."
                     mkdir -p ${DEPLOY_PATH}
                     rm -rf ${DEPLOY_PATH}/*
                 '
 
-                # Copy ONLY build folder contents
+                # Copy ONLY build output
                 scp -i ${SSH_KEY} -r build/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/
                 """
             }
