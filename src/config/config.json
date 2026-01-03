@@ -1,0 +1,19 @@
+{
+    "AUTH_API_URL": "https://backend.riu.ai/auth/",
+    "API_URL":"https://backend.riu.ai/api/v1/",
+    "ADMIN_API_URL": "https://backend.riu.ai/api/v1/admin/",
+    "S3_API_URL": "https://zais-documents.sapidblue.in/upload_file",
+    "OLD_API_URL": "https://backend.riu.ai/zais/",
+    "BASE_URL": "https://backend.riu.ai/",
+    "Admin_baseURL": "https://admin.riu.ai",
+    "baseURL": "https://cf.novuscap.co",
+    "smartUpApiUrl" : "https://api.development.smartup.io/oauth/v2/oauth/third-party",
+    "AUTH_API_URL_COMPANY": "https://cb.novuscap.co/v1.0/auth/",
+    "API_URL_COMPANY":"https://cb.novuscap.co/api/v1/",
+    "ADMIN_API_URL_COMPANY": "https://backend.riu.ai/api/v1/admin/",
+    "OLD_API_URL_COMPANY": "https://backend.riu.ai/zais/",
+    "PRELOGIN_API_URL_COMPANY": "https://cb.novuscap.co/v1.0/preLogin/",
+    "POSTLOGIN_API_URL_COMPANY": "https://cb.novuscap.co/v1.0/postLogin/",
+    "COMPANY_SERVER_API_URL": "https://backend.riu.ai/api/server/",
+    "BASE_API_URL_COMPANY": "https://cb.novuscap.co/"
+  }
