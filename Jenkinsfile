@@ -45,7 +45,7 @@ pipeline {
                     cd ${DEPLOY_PATH}
 
                     echo "Installing dependencies..."
-                    npm install
+                    npm install --force
 
                     echo "Building React app..."
                     npm run build
