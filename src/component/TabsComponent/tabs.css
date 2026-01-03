@@ -1,0 +1,23 @@
+.button {
+    border: 1px solid #3F88A5 !important;
+    border-radius: 13px;
+    padding: 5px 20px !important;
+    background-color: transparent;
+    color: black !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+.button:hover {
+    background-color: #3F88A5 !important;
+    color: black !important;
+}
+
+.activebtn {
+    background-color: #3F88A5 !important;
+    color: white !important;
+}
+
+.buttoncont {
+    margin-bottom: 2%;
+}

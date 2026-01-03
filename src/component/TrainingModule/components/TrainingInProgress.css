@@ -1,0 +1,15 @@
+.rowStyle {
+    background-color: #E9F6FB;
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 14px;
+    font-weight: bold;
+}
+
+.InProgress {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}

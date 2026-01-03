@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  /* font-family: proxima-nova, sans-serif !important; */
+  src: local("Proxima Nova") url("https://use.typekit.net/emv3zbo.css") !important;
+  background-color: #E3EBED;
+}
+
+:focus-visible {
+  outline: 1px solid var(--primaryColor) !important;
+}
+
+input:focus-visible {
+  outline: none !important;
+}
+
+.multiSelectContainer input {
+  padding: 3px 15px !important;
+}
+
+a {
+
+  text-decoration: none !important;
+}
+
+/* label {
+  color: var(--primaryColor) !important;
+} */
+
+.drag__swap__widget>div {
+  width: 33.3% !important;
+}

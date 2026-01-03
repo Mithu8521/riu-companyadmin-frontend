@@ -1,0 +1,38 @@
+.chart-container {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 20px;
+  /* Add space between the two charts */
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.legend-item:last-child {
+  margin-right: 0;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.legend-invited {
+  background-color: #68D098;
+}
+
+.legend-rejected {
+  background-color: #DE7878;
+}

@@ -1,0 +1,30 @@
+.RegisteredEmployees {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-left: 1em;
+}
+
+
+.status-registered {
+    color: green;
+}
+
+.status-not-registered {
+    color: red;
+}
+
+.trow {
+    color: black;
+}
+
+thead {
+    color: #3F88A5;
+    font-size: 16px;
+    /* Font size for thead */
+}
+
+tbody {
+    font-size: 14px;
+    /* Font size for tbody */
+}

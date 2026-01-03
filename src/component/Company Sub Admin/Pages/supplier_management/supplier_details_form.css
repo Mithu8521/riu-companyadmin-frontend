@@ -1,0 +1,39 @@
+.personal_details {
+  background-color: #a2e3fa !important;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.column {
+  padding: 20px
+}
+
+.personal_div {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block !important;
+}
+
+/* .personal_input{
+    width: 50% !important;
+  } */
+
+.required {
+  color: #8B0000;
+  margin-bottom: 15px;
+}
+
+.resetButton {
+  background-color: #FF7377 !important;
+  border-color: #FF7377 !important;
+  margin-left: 30px;
+}
+
+.closeButton {
+  background-color: #C4A484 !important;
+  border-color: #C4A484 !important;
+  margin-left: 30px;
+}

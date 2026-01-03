@@ -1,0 +1,95 @@
+/* Main container to center the form */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Ensures full height */
+  background-color: #f5f5f5;
+  /* Light background color for contrast */
+}
+
+/* Form styling */
+.register-form {
+  width: 50%;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #16325C;
+}
+
+.form-label {
+  color: #16325C;
+  font-weight: 500;
+}
+
+/* Styling the form control */
+.form-controll {
+  border-radius: 0.4rem;
+  border: 1px solid #476ea0;
+  padding: 10px;
+  color: #476ea0;
+}
+
+.form-controll:focus {
+  box-shadow: 0 0 5px 1px rgba(73, 172, 243, 0.5);
+  border-color: #49acf3;
+}
+
+.form-controll::placeholder {
+  color: #476ea0;
+  opacity: 0.8;
+}
+
+/* Wrapper for the select and icon */
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  width: 100%;
+  appearance: none;
+  padding-right: 2rem;
+  /* Space for the icon */
+}
+
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  cursor: pointer;
+  color: #3F88A5;
+  /* font-size: 1.2rem; */
+}
+
+/* Styling the register button */
+.register-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3F88A5;
+  color: #ffffff;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #3c95d6;
+}
+
+@media (max-width: 768px) {
+  .register-form {
+    width: 80%;
+  }
+}

@@ -1,0 +1,8 @@
+.text {
+    color: #212529;
+}
+
+.text:hover {
+    color: #212529;
+    text-decoration: none;
+}

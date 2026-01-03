@@ -1,0 +1,27 @@
+.toast-header {
+    width: fit-content !important;
+}
+
+.title__wrapper {
+    color: #1f9ed1;
+    font-weight: bold;
+}
+
+/* .question_type_filter {
+       border-bottom: 0px !important;
+       display: flex;
+       margin:20px 30px 30px 30px;
+   } */
+
+/* .question_type_filter div a {
+    cursor: pointer;
+    padding: 10px 20px !important;
+    font-weight: 600;
+    text-decoration: none;
+    color: #4f5367;
+}
+
+.selected_question_type {
+    border-bottom: 3px solid #1f9ed1;
+    color: #1f9ed1 !important;
+} */

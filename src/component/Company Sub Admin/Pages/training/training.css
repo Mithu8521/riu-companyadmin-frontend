@@ -1,0 +1,59 @@
+.card_anchor {
+    text-decoration: none;
+}
+
+.input-field {
+    width: 100%;
+    max-width: 350px;
+}
+
+.input-field .form-control {
+    border: none;
+    background: #E3EBED;
+    height: 52px;
+    border-radius: 42px;
+}
+
+.input-field span {
+    background: #E3EBED;
+    border: none;
+    border-radius: 52px;
+    padding: 0 20px;
+    color: #c9c9c9;
+}
+
+.input-field .form-control:focus {
+    background-color: #E3EBED;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.card_1 img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.card_1 p {
+    color: #4F5367;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.card_1 a {
+    text-decoration: none;
+}
+
+.card_1 iframe.embed-responsive-item {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.form_start .form-group .select_t {
+    height: 52px;
+    margin-top: 10px;
+    -webkit-appearance: menulist-button;
+    padding: 10px;
+}

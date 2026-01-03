@@ -1,0 +1,18 @@
+/* App.css */
+.nav-tabs .nav-link {
+  color: black;
+  /* Inactive tab color */
+  font-weight: bold;
+
+}
+
+.nav-tabs .nav-link.active {
+  color: #3F88A5;
+  /* Active tab color */
+  font-weight: bold;
+}
+
+.nav-tabs .nav-link:hover {
+  color: orangered;
+  /* Hover color */
+}

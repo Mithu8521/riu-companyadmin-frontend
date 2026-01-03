@@ -1,0 +1,47 @@
+.activities-sub-notifocation {
+    width: 100%;
+}
+
+.activities-sub-notifocation h4 {
+    font-size: 14px;
+    color: #b9b9b9;
+}
+
+.user-changes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.user-changes .wrap-user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%;
+}
+
+.user-changes .wrap-user span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    background: grey;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.user-changes .wrap-user p {
+    width: 100%;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.hr {
+    width: 100%;
+    height: 1px;
+    border: 1px dashed #eee;
+    margin: 20px 0;
+}

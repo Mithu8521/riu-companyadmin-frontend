@@ -1,0 +1,26 @@
+.topco {
+    width: 100%;
+    justify-content: space-between;
+    padding: 1.5%;
+    border-radius: 10px;
+}
+
+.secclass {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 46px;
+}
+
+.custom-btn {
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+.custom-btn2 {
+    color: black !important;
+    border: 1px solid #3F88A5 !important;
+}

@@ -1,0 +1,111 @@
+.id-column,
+.name-column,
+.progress-column,
+.count-column {
+    color: #96A5B8;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.count-column:hover {
+    cursor: pointer;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.legend-color {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.legend-color.assigned {
+    background-color: #0095d1
+        /* The color you use for assigned questions */
+    ;
+}
+
+.legend-text {
+    color: '#222B45';
+    font-size: 12px;
+    font-family: 'Open Sans';
+    font-weight: '400';
+    word-wrap: 'break-word'
+
+}
+
+.id-column {
+    width: 10%;
+}
+
+.name-column {
+    width: 30%;
+}
+
+.progress-column {
+    width: 40%;
+}
+
+.scrollable-table {
+    height: 70%;
+    /* Adjust this value to your needs */
+    overflow-y: auto;
+}
+
+.count-column {
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-container {
+    display: flex;
+    height: 32px;
+}
+
+.bar {
+    height: 100%;
+}
+
+.accepted {
+    background-color: #008000;
+}
+
+.answered {
+    background-color: #0000FF;
+}
+
+.not-responded {
+    background-color: #808080;
+}
+
+.rejected {
+    background-color: #FFA500;
+}
+
+.assigned {
+    background-color: #0095d1;
+}
+
+.count-container {
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #DCEEEF;
+    color: #3F88A5;
+    text-align: right;
+    padding: 5px;
+}

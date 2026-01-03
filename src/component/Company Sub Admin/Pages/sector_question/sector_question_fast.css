@@ -1,0 +1,151 @@
+body {
+  background-color: #E3EBED !important;
+}
+
+.color_div_step {
+  background: #ffffff;
+  box-shadow: 0px 4px 22px rgb(222 227 245 / 60%);
+  border-radius: 8px;
+  padding: 50px 51px;
+}
+
+.div-color {
+  margin-top: 70px;
+}
+
+.ste-steps {
+  position: relative;
+}
+
+.parent-enviornment {
+  position: absolute;
+  top: -130px;
+}
+
+.nav-tabs .nav-item.show .nav-link::before,
+.nav-tabs .nav-link.active::before {
+  content: "";
+  position: absolute;
+  right: -25px;
+  bottom: 0px;
+  width: 25px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: -11px 6px 0 0px #fff;
+  pointer-events: none;
+  z-index: 99;
+}
+
+/* After */
+.nav-tabs .nav-item.show .nav-link::after,
+.nav-tabs .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  bottom: 0px;
+  width: 25px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 8px 6px 0 0px #fff;
+  pointer-events: none;
+}
+
+.nav-tabs .nav-link {
+  color: #fff;
+  margin-bottom: 0px !important;
+  transition: none;
+  padding: 10px 30px;
+}
+
+.nav-tabs .nav-link.active {
+  border-color: transparent !important;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+.parent-enviornment li.nav-item {
+  padding: 0;
+}
+
+.parent-enviornment {
+  display: flex;
+  flex-grow: 2;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-bottom: none !important;
+  flex-wrap: wrap;
+  flex: 0 0 50;
+}
+
+.parent-enviornment button {
+  color: #4f5367;
+}
+
+.parent-enviornment button:hover {
+  color: #05b49d;
+}
+
+.form_x.mb-3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form_x label.form-label {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  color: #1f9ed1;
+  font-weight: 600;
+}
+
+.form_x select.form-select {
+  border: 1px solid #E3EBED;
+  height: 50px;
+}
+
+.dropdown input#dropdownMenuLink {
+  background: #ffff;
+  border: 1px solid #E3EBED;
+  text-align: left;
+}
+
+.dropdown .dropdown-menu.border-0.shadow.show {
+  padding: 10px;
+}
+
+.dropdown .shadow ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  height: 140px;
+}
+
+.dropdown .shadow ul li {
+  text-decoration: none;
+  display: block;
+}
+
+.check-form {
+  display: flex !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Global_text .form-check input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin-top: 5px;
+}

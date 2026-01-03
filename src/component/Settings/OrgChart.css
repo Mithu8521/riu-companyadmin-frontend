@@ -1,0 +1,54 @@
+.org-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.org-chart {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  justify-content: center;
+}
+
+.node-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.node {
+  background-color: lightblue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.node-actions {
+  margin-top: 10px;
+}
+
+.node-actions button {
+  margin: 5px;
+}
+
+.children {
+  display: flex;
+  flex-direction: row; /* Horizontal children */
+  margin-top: 20px;
+}
+
+.node-container > .node {
+  transform: rotate(90deg); /* Rotate each node to make it horizontal */
+}
+
+.node-container > .children {
+  margin-top: 20px;
+  transform: rotate(-90deg); /* Rotate back the children */
+}
+
+button {
+  cursor: pointer;
+}

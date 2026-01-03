@@ -1,0 +1,39 @@
+.containe {
+  display: flex;
+  align-items: center;
+  background-color: #E9F6FB;
+  padding: 10px;
+  border-radius: 5px;
+  /* max-width: 400px; */
+}
+
+.calendar-date {
+  background-color: #3F88A5;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.training-info {
+  margin-left: 10px;
+  color: #333;
+}
+
+.training-info p {
+  margin: 0;
+}
+
+.training-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.training-info a:hover {
+  text-decoration: underline;
+}

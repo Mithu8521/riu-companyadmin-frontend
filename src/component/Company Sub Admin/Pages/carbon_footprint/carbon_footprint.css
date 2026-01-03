@@ -1,0 +1,10 @@
+.ganerate_p {
+    display: flex;
+    flex-direction: column;
+}
+
+.ganerate_p span {
+    margin-top: 10px;
+    color: #4F5367;
+    font-weight: 700;
+}

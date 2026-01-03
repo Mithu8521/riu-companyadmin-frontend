@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  list-style: none;
+}
+
+.page {
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.page .active {
+  border: 2px solid #000;
+  background: red;
+  font-weight: bold;
+}
+
+.previous {
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.break {
+  padding: 10px;
+}
+
+.next {
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+li.next.disabled {
+  cursor: not-allowed;
+  color: black;
+  border: 1px solid transparent;
+}
+
+li.next.disabled:hover {
+  background: transparent;
+  border: 1px solid transparent;
+  color: black;
+  cursor: not-allowed;
+}
+
+li.next:hover {
+  background: transparent;
+  border: 1px solid #1f9ed1;
+  color: black;
+  cursor: not-allowed;
+  /* padding: 8px; */
+}
+
+.previous {
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  width: 100px;
+  color: black;
+  cursor: pointer;
+
+
+}
+
+.previous:hover {
+  background: transparent;
+  border: 1px solid #1f9ed1;
+  color: black;
+  cursor: not-allowed;
+}
+
+li.previous.disabled {
+  cursor: not-allowed;
+  color: black;
+  border: 1px solid transparent;
+
+}
+
+li.previous.disabled:hover {
+  background: transparent;
+  border: 1px solid transparent;
+  color: black;
+  cursor: not-allowed;
+}
+
+li.pages.active {
+  background: #1f9ed1;
+  color: white;
+  border: 1px solid #1f9ed1;
+
+}
+
+li.pages.active:hover {
+  background: transparent;
+  color: #1f9ed1;
+  border: 1px solid #1f9ed1;
+}
+
+li.previous.disabled {
+  cursor: none;
+}
+
+.pages {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border: 1px solid transparent;
+  margin-left: 3px;
+
+}
+
+.pages:hover {
+  border: 1px solid #1f9ed1;
+  color: #1f9ed1;
+}
+
+ul {
+  align-items: baseline;
+}
+
+.pagination li:last-child,
+.pagination li:nth-child(2) {
+  margin-left: auto;
+}

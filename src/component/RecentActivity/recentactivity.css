@@ -1,0 +1,47 @@
+.mainhead {
+  color: "#011627";
+  font-size: 24;
+  font-family: "Open Sans";
+  font-weight: "600";
+  word-wrap: "break-word";
+}
+
+.recentclass {
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.circle-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e9edf1;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.recentclass>p {
+  color: "#011627";
+  font-size: 24px;
+  font-family: "Open Sans";
+
+  word-wrap: "break-word";
+  font-weight: bold;
+}
+
+.name {
+  color: "#1C1C1C";
+  font-size: 14px;
+  margin-left: 10px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  word-wrap: "break-word";
+}
+

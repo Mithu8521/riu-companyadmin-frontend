@@ -1,0 +1,23 @@
+.data__section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.Data__Wrapper {
+  width: calc(50% - 20px);
+}
+
+.data__label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1f9ed1;
+  margin-bottom: 10px;
+}
+
+.data__value {
+  font-size: 16px;
+}

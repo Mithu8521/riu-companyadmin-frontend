@@ -1,0 +1,53 @@
+.topcompcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  height: 100%
+}
+
+.h3-spacing {
+  margin-bottom: 10px;
+  /* Adjust as needed */
+}
+
+.h6-spacing {
+  margin-bottom: -1px;
+  /* Adjust as needed */
+}
+
+.ptop {
+  color: #3f88a5;
+}
+
+.firsthalf {
+  width: 60%;
+}
+
+.divvWithBorder::after {
+  content: "";
+  right: 0;
+  top: 30%;
+  bottom: 35%;
+  width: 2px;
+  margin-left: 20px;
+  background-color: #3f88a580;
+}
+
+.secondhalff {
+  width: 20%;
+
+}
+
+.secondhalf {
+  margin-top: 10%;
+  height: 40%;
+  padding: 10px;
+  background: white;
+  box-shadow: 0px 2px 10px #3f88a5;
+  border-radius: 12px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  display: inline-flex;
+}
