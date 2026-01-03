@@ -7,7 +7,7 @@ pipeline {
         DEPLOY_PATH = "/var/www/html/cf.novuscap.co"
         SSH_KEY = "/var/lib/jenkins/.ssh/id_ed25519"
 
-        // 🔥 FIX: Increase Node.js memory
+        // Increase Node memory for React build
         NODE_OPTIONS = "--max-old-space-size=4096"
 
         SUCCESS_MESSAGE = "✅ Deployment done"
@@ -28,32 +28,31 @@ pipeline {
             }
         }
 
-        stage('Deploy Code') {
+        stage('Install Dependencies & Build') {
             steps {
-                echo "Deploying React frontend to EC2 as ubuntu user..."
+                echo "Installing dependencies and building React app..."
+
+                sh '''
+                    export NODE_OPTIONS=--max-old-space-size=4096
+                    npm install --force
+                    npm run build
+                '''
+            }
+        }
+
+        stage('Deploy Build Folder Only') {
+            steps {
+                echo "Deploying ONLY build folder to EC2..."
 
                 sh """
-                # Prepare directory on server
+                # Prepare server directory
                 ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} '
-                    echo "Preparing deployment directory..."
                     mkdir -p ${DEPLOY_PATH}
                     rm -rf ${DEPLOY_PATH}/*
                 '
 
-                # Copy code to server
-                scp -i ${SSH_KEY} -r . ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/
-
-                # Install & build on server with increased heap
-                ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} '
-                    cd ${DEPLOY_PATH}
-
-                    echo "Installing dependencies..."
-                    export NODE_OPTIONS=--max-old-space-size=4096
-                    npm install --force
-
-                    echo "Building React app..."
-                    npm run build
-                '
+                # Copy ONLY build folder contents
+                scp -i ${SSH_KEY} -r build/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/
                 """
             }
         }
