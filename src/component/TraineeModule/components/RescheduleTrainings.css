@@ -1,0 +1,66 @@
+/* .container {
+   
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .leftSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dateCircle {
+    width: 40px;
+    height: 40px;
+    background-color: #3F88A5;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .textSection {
+    margin-left: 15px;
+  }
+  
+  .mainText {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .meetingLink {
+    font-size: 12px;
+    color: #0052B4;
+  }
+  
+  .meetingLink a {
+    text-decoration: none;
+    color: #57a2c9;
+  }
+  
+  .rightSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .downloadButton {
+    background-color: #3F88A5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .downloadButton:hover {
+    background-color: #4a92b5;
+  }
+   */

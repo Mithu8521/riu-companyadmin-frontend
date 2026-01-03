@@ -1,0 +1,11 @@
+.focusarea {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+}
+
+.trick {
+    margin-top: 10px;
+    margin-left: -20px;
+}

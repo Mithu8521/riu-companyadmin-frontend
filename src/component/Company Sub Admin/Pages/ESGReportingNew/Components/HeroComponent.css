@@ -1,0 +1,27 @@
+.active-tabb {
+  color: #3f88a5;
+  /* Change text color to blue */
+  text-decoration: underline;
+  text-underline-offset: 9px;
+  text-decoration-thickness: 2px;
+  /* Increase the thickness of the underline */
+
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  /* Add gap between the underline and the text */
+}
+
+/* .row>div {
+  margin-right: -1%;
+} */
+
+.btn-custom-selected {
+  background-color: #3F88A5;
+  color: white;
+  border: 1px solid #3F88A5;
+  width: calc(50% - 4px);
+  /* Adjusting width to account for the gap */
+  transition: background-color 0.3s, color 0.3s;
+}

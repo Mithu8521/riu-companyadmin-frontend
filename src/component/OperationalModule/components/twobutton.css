@@ -1,0 +1,61 @@
+.cb {
+
+  border: 2px solid #3F88A5 !important;
+
+  padding-top: 1.5% !important;
+  padding-bottom: 1.5% !important;
+  padding-right: 3% !important;
+  padding-left: 3% !important;
+  font-size: small !important;
+}
+
+.conta {
+  display: flex;
+  width: 30% !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Align the search bar and ensure proper spacing */
+.search-bar-wrapper {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+  margin-left: 11%;
+  width: 50%;
+  background-color: transparent
+    /* Adjust as needed */
+}
+
+.search-bar {
+  /* width: 20%; */
+  background-color: transparent;
+  /* border:1px solid #3F88A5; Adjust width as needed */
+}
+
+/* Input styling for consistency */
+.search-bar .form-control {
+  border-radius: 10px;
+
+  background-color: transparent;
+  border: 2px solid #3F88A5;
+  border-left: none;
+  /* Adjust border color as needed */
+}
+
+/* Icon styling */
+.search-bar .input-group-text {
+  background-color: transparent;
+  border: 2px solid #3F88A5;
+  border-right: none;
+  /* Remove right border to merge with input */
+  border-radius: 10px;
+}
+
+.search-bar .form-control:focus {
+  /* Remove focus shadow */
+  background-color: transparent;
+  border: 2px solid #3F88A5 !important;
+  border-left: none !important;
+}

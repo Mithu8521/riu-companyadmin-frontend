@@ -1,0 +1,95 @@
+.dashboard-overview {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.dashboard-overview h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #34495E;
+}
+
+.metrics-container {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  height: "80%"
+}
+
+.metric-card {
+  flex: 1;
+  min-width: 25%;
+  max-width: 31%;
+  background: #ECF0F1;
+  padding: 15px;
+  height: 30%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-title {
+  font-size: 0.9em;
+  color: #34495E;
+  margin-bottom: 10px;
+}
+
+.progress-bar-container {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.percentage-value {
+  font-size: 0.8em;
+  color: #2C3E50;
+  font-weight: light;
+}
+
+@media (max-width: 768px) {
+  .metrics-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metric-card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.legends-container {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.legend-color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}

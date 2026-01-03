@@ -1,0 +1,36 @@
+.view-button {
+  border: 1px solid #eee !important;
+  border-radius: 0 20px 20px 0 !important;
+}
+
+.view-button i {
+  margin: 0 10px;
+  color: #233076;
+}
+
+.view-button i span {
+  font-family: proxima, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.view-button:hover {
+  background: linear-gradient(91.53deg,
+      #233076 13.86%,
+      #41c7ed 112.43%) !important;
+}
+
+.view-button i:hover {
+  color: #fff;
+}
+
+.feedback2.ui.modal {
+  width: 900px;
+  margin: 0;
+  height: 260px;
+  margin: 260px 25%;
+}
+
+.ui.dimmer {
+  background-color: rgba(0, 0, 0, 0.5);
+}

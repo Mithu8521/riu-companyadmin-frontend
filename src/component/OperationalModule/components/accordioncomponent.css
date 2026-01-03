@@ -1,0 +1,46 @@
+.accordion-button::after {
+  display: none !important;
+}
+
+.bg-color {
+  background-color: black !important;
+}
+
+
+
+.custom-label {
+  color: rgba(0, 0, 0, 0.70);
+  font-size: 12px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.date-picker-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.date-picker-input {
+  flex: 1;
+  padding-right: 1%;
+  padding-left: 1.5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  /* Adjust padding to make space for the icon */
+}
+
+.col-20 {
+  width: 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.date-picker-icon {
+  position: absolute;
+  right: 10px;
+  /* Position icon on the right inside the input */
+  pointer-events: none;
+  /* Ensure the icon does not interfere with input events */
+}

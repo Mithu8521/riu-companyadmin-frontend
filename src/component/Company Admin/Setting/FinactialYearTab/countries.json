@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "isoCode": "US",
+    "currancy": "$",
+    "name": "United States",
+    "financialYear": "1st Apr - 31st Mar"
+  },
+  {
+    "id": 2,
+    "isoCode": "GB",
+    "currancy": "£",
+    "name": "United Kingdom",
+    "financialYear": "1st Apr - 31st Mar"
+  },
+  {
+    "id": 3,
+    "isoCode": "SA",
+    "currancy": "﷼",
+    "name": "Saudi Arebiya",
+    "financialYear": "1st Jan - 31st Dec"
+  },
+  {
+    "id": 4,
+    "isoCode": "ZA",
+    "currancy": "R",
+    "name": "South Africa",
+    "financialYear": "1st Apr - 31st Mar"
+  },
+  {
+    "id": 5,
+    "isoCode": "IN",
+    "currancy": "₹",
+    "name": "India",
+    "financialYear": "1st Apr - 31st Mar"
+  },
+  {
+    "id": 6,
+    "isoCode": "JP",
+    "currancy": "¥",
+    "name": "Japan",
+    "financialYear": "1st Apr - 31st Mar"
+  },
+  {
+    "id": 7,
+    "isoCode": "AE",
+    "currancy": "د.إ",
+    "name": "United Arab Emirates",
+    "financialYear": "1st Jan - 31st Dec"
+  }
+]

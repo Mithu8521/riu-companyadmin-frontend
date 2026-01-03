@@ -1,0 +1,72 @@
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+.response {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px 20px 20px;
+}
+
+.response h4 {
+  color: #1f9ed1;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.Data {
+  position: absolute;
+  content: "";
+  left: -180px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 20px;
+}
+
+.env-l {
+  width: 240px;
+  min-height: 150px;
+  border: 1px solid #E3EBED;
+  padding: 20px;
+}
+
+.graph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  text-align: -webkit-center;
+}
+
+
+@media (max-width: 1350px) {
+
+  /* .graph {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+
+}  */
+
+  table.graphTable.table.table-bordered {
+    /* width: 220%; */
+    width: 100%;
+    margin-top: 20px;
+
+  }
+}
+
+@media (max-width: 1199px) {
+
+  table.graphTable.table.table-bordered {
+    width: 100%;
+    margin-top: 20px;
+
+  }
+}

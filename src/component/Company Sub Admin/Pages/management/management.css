@@ -1,0 +1,92 @@
+ul.grapic {
+  display: block;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+ul.grapic li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.modal_box.modal.show .modal-dialog {
+  transform: translateY(30px);
+  width: 100%;
+  max-width: 800px;
+}
+
+.modal_box .modal-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  border-bottom: none;
+}
+
+.modal-box .modal-body {
+  padding: 2rem;
+}
+
+.menber_j {
+  font-weight: bold !important;
+  font-size: 12px !important;
+  line-height: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  text-align: right !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase !important;
+  color: #05b49d !important;
+  text-decoration: none !important;
+  margin-bottom: 0 !important;
+}
+
+button.edit {
+  color: #6d79a7;
+  font-weight: 700;
+}
+
+.text_tnp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  -webkit-gap: 15px;
+  -o-gap: 15px;
+  -moz-gap: 15px;
+}
+
+.helop_tex {
+  flex: 0 0 80%;
+}
+
+.text_image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+.skill-save-btn {
+  width: 195px;
+}
+
+
+option.selectOptions {
+  color: #8d8c8c;
+}
+
+span.skills {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #6d79a7;
+  background: #1f9ed140;
+  border-radius: 200px;
+  display: inline-block;
+  padding: 4px 20px;
+  margin: 5px 5px;
+}

@@ -1,0 +1,33 @@
+.radio-container {
+  display: flex;
+  align-items: center;
+  margin-right: 0.2px;
+  /* Add some margin between each pair */
+}
+
+.radio-input {
+  margin-right: 1px;
+  /* Add some margin between the radio input and label */
+  transform: scale(0.8);
+  /* Adjust the size of the checkbox */
+}
+
+.radio-label {
+  font-size: 0.8em;
+  /* Adjust the font size */
+}
+
+.graphhh {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  background: white;
+  padding: 10px;
+  align-items: center;
+}
+
+.maincole {
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+}

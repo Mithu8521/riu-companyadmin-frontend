@@ -1,0 +1,85 @@
+.email-dropdown {
+  position: relative;
+  background-color: "rgba(255, 255, 255, 0.5)" !important;
+  width: 100%;
+}
+
+
+.selected-emails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.email-chip {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #3F88A5;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #3F88A5;
+}
+
+.email-chip button {
+  background: none;
+  border: none;
+  color: #888;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.email-chip button:hover {
+  color: #333;
+}
+
+.email-input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.dropdown-list {
+  position: absolute;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-title {
+  font-weight: bold;
+}
+
+.dropdown-role {
+  font-size: 12px;
+  color: #666;
+}
+
+.dropdown-email {
+  font-size: 14px;
+  color: #888;
+}

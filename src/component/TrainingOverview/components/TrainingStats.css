@@ -1,0 +1,65 @@
+.training-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 equal columns in a single row */
+  gap: 20px;
+  /* Gap between the boxes */
+
+}
+
+.training-stat-box {
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  border-radius: 20px;
+
+
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  /* Add padding inside each box */
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  height: 100%;
+}
+
+.training-stat-content {
+  display: flex;
+  flex-direction: column;
+  /* Stack the h5, icon, and number vertically */
+  align-items: flex-start;
+}
+
+.training-stat-info {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center;  */
+}
+
+.training-stat-info h5 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-right: 10px;
+  /* Space between h5 and icon */
+}
+
+.training-stat-number {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  /* Space between the number and h5 */
+  color: #ccc;
+}
+
+.icon {
+  /* background-color: #3fa0d5; */
+  /* padding: 10px; */
+  margin-left: 5px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+}

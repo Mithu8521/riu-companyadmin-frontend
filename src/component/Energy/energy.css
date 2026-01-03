@@ -1,0 +1,47 @@
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: "100%" !important;
+}
+
+.topcompo {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.firsthalfprogressenergy {
+  width: 65%;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.firsthalfprogresss {
+  width: 38%;
+  margin-right: 10px;
+}
+
+.secondhalfprogresss {
+  margin-left: 10px;
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  height: 100%;
+}
+
+.apexcharts-legend-series .apexcharts-legend-marker {
+  border-radius: 50% !important;
+  /* Force the marker to be a circle */
+}
+
+/* .apexcharts-legend {
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: nowrap !important; 
+    align-items: center; 
+  } */

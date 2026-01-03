@@ -1,0 +1,38 @@
+.toggle-switch {
+  width: 6.5vw;
+  height: 5vh;
+  border-radius: 17px;
+  background: linear-gradient(to right, #A4E8C2, #76C07C);
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-knob {
+  width: 2vw;
+  height: 4vh;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 9%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-knob.on {
+  left: 0.1vw;
+}
+
+.toggle-knob.off {
+  left: 4.4vw;
+}
+
+.toggle-arrow {
+  font-size: 14px;
+  color: #A4E8C2;
+}

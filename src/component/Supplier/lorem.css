@@ -1,0 +1,13 @@
+.caret-b {
+    position: relative;
+}
+
+.caret-d {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+.caret-b .dropdown-menu {
+    width: 100%;
+}

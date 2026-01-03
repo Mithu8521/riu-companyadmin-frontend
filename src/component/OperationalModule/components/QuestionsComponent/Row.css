@@ -1,0 +1,55 @@
+.input-percentage-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-percentage-wrapper .percentage-sign {
+  position: absolute;
+  right: 10px;
+  color: #000;
+  font-weight: bold;
+}
+
+
+
+.custom-file-upload .file-upload-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.custom-file-upload .upload-btn {
+  background-color: #3F88A5;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.custom-file-upload .upload-btn:hover {
+  background-color: #357a8a;
+}
+
+.custom-file-upload .upload-btn .upload-icon {
+  /* background-image: url('upload-icon-path.svg'); Replace with the actual path to the icon */
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+
+.custom-file-upload .upload-btn span {
+  margin-left: 8px;
+  font-size: 10px;
+  font-weight: light;
+}
+
+/* Ensures the file input is hidden */
+.custom-file-upload input[type="file"] {
+  display: none;
+}

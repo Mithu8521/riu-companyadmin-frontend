@@ -1,0 +1,135 @@
+table .table-tag {
+    color: #1f9ed1 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: none;
+    background: none;
+}
+
+.address h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #4F5367;
+    margin-bottom: 22px;
+    margin-top: 0;
+}
+
+.address p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #4F5367;
+    margin-bottom: 15px;
+}
+
+.address .amount {
+    font-weight: 600;
+    font-size: 42px;
+}
+
+.table_footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: end;
+}
+
+.footer-lable label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #4F5367;
+    margin-bottom: 22px;
+    margin-top: 0;
+}
+
+.footer-lable p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #4F5367;
+    margin-bottom: 22px;
+    margin-top: 0;
+}
+
+.red {
+    color: #E70000 !important;
+}
+
+.green {
+    color: #05B49D !important;
+}
+
+.orange {
+    color: #c97d1c !important;
+}
+
+.black {
+    color: #000000 !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a.non_underline_link {
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.biling-menu {
+    -webkit-appearance: menulist-button !important;
+}
+
+.duja-input {
+    border: 1px solid #05B49D !important;
+}
+
+.hara-rang {
+    color: #05B49D;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    margin: 20px 0;
+}
+
+.hara-rang:hover {
+    color: #05B49D;
+}
+
+.removeMeta i {
+    border: 1px solid #eee;
+    padding: 19px;
+    height: 52px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: #b9b9b9;
+}
+
+.page-wid {
+    background: #b9b9b9 !important;
+    margin-top: 6px;
+    border: none !important;
+}

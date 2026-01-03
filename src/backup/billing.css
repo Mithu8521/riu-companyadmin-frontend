@@ -1,0 +1,131 @@
+table .table-tag {
+  color: #1f9ed1 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: none;
+  background: none;
+}
+
+.address h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #4f5367;
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.current-plan {
+  margin-top: -52px;
+}
+
+ul.planFeatures li {
+  line-height: 2;
+}
+
+.data_card-2 {
+  margin: 0 auto;
+  width: 100%;
+  padding: 8px 50px;
+  height: 120px;
+  overflow-y: scroll;
+  overflow-y: scroll;
+  margin-bottom: 35px;
+  background: #eee;
+}
+
+.data_card-2::-webkit-scrollbar {
+  display: none;
+}
+
+.data_card-2 {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.logout {
+  font-size: 18px;
+}
+
+.framworks1 {
+  height: auto !important;
+  padding: 30px !important;
+  margin: 0 18%;
+}
+
+.main_wrapper1 {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  padding-bottom: 60px;
+  top: 99px;
+  /* margin-bottom: 95px; */
+}
+
+.address p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #4f5367;
+  margin-bottom: 15px;
+}
+
+.address .amount {
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.table_footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-lable label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #4f5367;
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.footer-lable p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #4f5367;
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.red {
+  color: #e70000 !important;
+}
+
+.green {
+  color: #05b49d !important;
+}
+
+/* i.fa.fa-sign-out {
+  color: #ffffff;
+} */

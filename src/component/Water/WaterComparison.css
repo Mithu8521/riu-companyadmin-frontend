@@ -1,0 +1,53 @@
+.container {
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  height: 10%;
+  margin-bottom: 1%;
+}
+
+.title {
+  margin: 0;
+  font-weight: bold;
+}
+
+.apexcharts-xaxis-label {
+  font-size: 15px;
+}
+
+
+
+.chart-container {
+  height: 80%;
+}
+
+.legend-container {
+  display: flex;
+  align-items: center;
+  height: 9%;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.legend-color-box {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.legend-text {
+  font-weight: normal;
+  color: grey;
+}

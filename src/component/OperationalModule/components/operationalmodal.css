@@ -1,0 +1,267 @@
+/* Custom checkbox styles */
+.greenCheckbox input[type="checkbox"] {
+  /* Hide the default checkbox */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #3f88a5; /* Green border */
+  border-radius: 3px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.greenCheckbox input[type="checkbox"]:checked {
+  background-color: #3f88a5; /* Green background */
+}
+
+.greenCheckbox input[type="checkbox"]:checked::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 1px;
+  left: 4px;
+}
+
+.gradient-border {
+    padding: 8px;
+    background-color: white; /* Background color for the form control */
+    border-radius: 10px; /* Ensure border-radius is applied */
+    position: relative; /* Required for positioning the custom arrow */
+    -webkit-appearance: none; /* Remove default arrow in Chrome */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    appearance: none;
+    border-color: #3F88A5; /* Remove default arrow in modern browsers */
+  }
+  
+  /* Custom arrow */
+  .gradient-border::after {
+    content: '\25BC'; /* Unicode for a downward arrow */
+    font-size: 16px;
+    color: #020024; /* Arrow color */
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust as needed to position arrow */
+    transform: translateY(-50%);
+    pointer-events: none;
+    border-color: #3F88A5; /* Ensure it does not block clicks */
+  }
+  
+  /* Gradient border */
+  .gradient-border-only {
+    position: relative;
+    border-radius: 10px; 
+    border-color: #3F88A5;/* Apply radius to the container */
+  }
+
+  .custom-select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Remove default arrow for Safari */
+    -moz-appearance: none; /* Remove default arrow for Firefox */
+    background-color: #BFD7E0; /* Match your style */
+    padding-right: 30px; /* Make room for the arrow */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 19 19 " fill="black"><path d="M7 10l5 5 5-5z"/></svg>'); /* Base64 encoded SVG arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+    border-color: #3F88A5;
+    ;
+
+  }
+
+  .custom-table {
+    width: 100%;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  .custom-table th, .custom-table td {
+ 
+    padding: 10px;
+  }
+  
+  .custom-table th {
+    background-color: #F5F5F5;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .custom-table td {
+    background-color: #FFFFFF;
+    font-size: 14px;
+  }
+  
+  .table-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #3F88A5;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  
+
+  .custom-select:focus {
+    outline: none;
+    border-color: #0056b3; /* Adjust focus border color */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Adjust focus shadow */
+  }
+
+  .alert-box {
+    display: flex;
+    align-items: center;
+    background-color: #ffcccc;
+    color: #d8000c;
+    border: 1px solid #d8000c;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    margin-left: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .alert-icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .alert-text {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  
+  .gradient-border-only::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #020024 0%, #090979 50%, #00D4FF 100%);
+    padding: 2px;
+    box-sizing: border-box;
+  }
+  
+  
+
+.gradient-border-only input {
+    border: 1.5px solid; /* Set the border width */
+    -o-border-image: linear-gradient(
+      to right,
+      #020024 0%,
+      #090979 50%,
+      #00d4ff 100%
+    ) 1;
+       border-image: linear-gradient(
+      to right,
+      #020024 0%,
+      #090979 50%,
+      #00d4ff 100%
+    ) 1;
+    border-radius: 15px; /* Optional: for rounded corners */
+    padding: 5px; /* Adjust padding as needed */
+    outline: none; /* Remove default outline on focus */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+  }
+
+
+  .custom-tabs .nav-link {
+    border: 1px solid #3F88A5 !important;
+    border-radius: 8px;
+    margin-right: 8px;
+    color: #3F88A5;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .custom-tabs .nav-link.active {
+    background-color: #3F88A5 !important;
+    color: white !important;
+  }
+  
+  .custom-tabs .nav-link:hover {
+    background-color: #e0f4ff !important;
+    color: #3F88A5 !important;
+  }
+  
+  .custom-tabs .nav-item {
+    margin-bottom: -1px;
+  }
+  
+  .custom-tabs .nav-tabs {
+    border-bottom: none;
+  }
+  
+  /* .select-with-arrow {
+    background-image: url('../../../img/DownArrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px;
+   
+
+
+}
+
+.select-with-arrow.open {
+    background-image: url('../../../img/DownArrow.svg');
+    transform: rotate(180deg);
+} */
+
+.modal-dialog{
+  height: 75% !important;
+}
+
+.modal-xl{
+  height: 75% !important;
+}
+
+/* .modal-content{
+  height: 100%  !important;
+} */
+
+.modal-header{
+  height:10%  !important;
+}
+
+
+
+.custom-tabss .nav-link {
+
+  margin-right: 8px;
+  color: #3F88A5;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.custom-tabss .nav-link.active {
+  color: #3F88A5 !important; /* Keep the color the same */
+  border-bottom: 2px solid #3F88A5 !important; /* Add the border-bottom with the same color */
+  font-weight: 700; /* Optionally, make the font bold if desired */
+
+}
+
+.custom-tabss .nav-link:hover {
+  background-color: #e0f4ff !important;
+  color: #3F88A5 !important;
+}
+
+.custom-tabss .nav-item {
+
+}
+
+.custom-tabss .nav-tabs {
+  border-bottom: none;
+}

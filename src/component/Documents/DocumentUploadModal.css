@@ -1,0 +1,794 @@
+/* Document Upload Modal Styles */
+
+:root {
+  --primaryColor: #3f88a5;
+  --secondaryColor: #1f9ed1;
+  --tertiaryColor: #011627;
+  --neutralColor: #fff;
+  --neutralColorOpacity: #f6f7fa;
+  --successColor: #28a745;
+  --errorColor: #dc3545;
+  --warningColor: #ffc107;
+}
+
+/* Modal Base Styles */
+.document-upload-modal .modal-dialog {
+  max-width: 1200px;
+}
+
+.document-upload-modal .modal-content {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.document-upload-modal .modal-header {
+  background: linear-gradient(135deg, var(--primaryColor), var(--secondaryColor));
+  color: white;
+  padding: 20px 30px;
+  border-bottom: none;
+}
+
+.document-upload-modal .modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.document-upload-modal .btn-close-custom {
+  background: none;
+  color: white;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.document-upload-modal .btn-close-custom:hover {
+  opacity: 1;
+  color: white;
+}
+
+.document-upload-modal .modal-body {
+  padding: 30px;
+  background-color: #f8f9fa;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.document-upload-modal .modal-footer {
+  background-color: #f8f9fa;
+  padding: 20px 30px;
+}
+
+/* Upload Content */
+.document-upload-content {
+  background: transparent;
+}
+
+/* File Upload Area */
+.document-upload-modal .file-upload-container {
+  margin-bottom: 20px;
+}
+
+.document-upload-modal .file-upload-area {
+  border: 2px dashed #dee2e6;
+  border-radius: 12px;
+  background-color: var(--neutralColor);
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.document-upload-modal .file-upload-area:hover {
+  border-color: var(--primaryColor);
+  background-color: rgba(63, 136, 165, 0.05);
+}
+
+.document-upload-modal .file-upload-area h5 {
+  color: var(--tertiaryColor);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Custom File Input Styling for Modal */
+.document-upload-modal .file-input-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.document-upload-modal .file-input {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.document-upload-modal .file-input-label {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primaryColor);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border: none;
+  text-align: center;
+  min-width: 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.document-upload-modal .file-input-label:hover {
+  background-color: var(--secondaryColor);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.document-upload-modal .file-input-label:active {
+  transform: translateY(0);
+}
+
+/* Upload Success Animation */
+.document-upload-modal .upload-success {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Document Form Styles in Modal */
+.document-upload-modal .document-form {
+  background-color: var(--neutralColor);
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.document-upload-modal .document-form .form-label {
+  font-weight: 600;
+  color: var(--tertiaryColor);
+  margin-bottom: 8px;
+}
+
+.document-upload-modal .document-form .form-control,
+.document-upload-modal .document-form .form-select {
+  border-color: rgba(31, 158, 209, 0.3);
+  border-radius: 6px;
+  padding: 10px 12px;
+  transition: all 0.2s ease;
+}
+
+.document-upload-modal .document-form .form-control:focus,
+.document-upload-modal .document-form .form-select:focus {
+  border-color: var(--primaryColor);
+  box-shadow: 0 0 0 0.2rem rgba(63, 136, 165, 0.25);
+}
+
+/* Parsed Document Details in Modal */
+.document-upload-modal .parsed-document-details {
+  background-color: var(--neutralColor);
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.document-upload-modal .parsed-document-details h5 {
+  color: var(--tertiaryColor);
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.document-upload-modal .parsed-document-details h6 {
+  color: var(--primaryColor);
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* File Metadata Section in Modal */
+.document-upload-modal .file-metadata-section {
+  background-color: var(--neutralColor);
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 20px;
+  border-left: 4px solid var(--tertiaryColor);
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.document-upload-modal .file-metadata-section h6 {
+  color: var(--tertiaryColor);
+  margin-bottom: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.document-upload-modal .file-metadata-section h6::before {
+  content: "📁";
+  margin-right: 8px;
+  font-size: 1.1em;
+}
+
+.document-upload-modal .file-metadata-grid {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.document-upload-modal .metadata-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  flex-wrap: wrap;
+}
+
+.document-upload-modal .metadata-item:last-child {
+  border-bottom: none;
+}
+
+.document-upload-modal .metadata-item strong {
+  color: var(--tertiaryColor);
+  font-weight: 600;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.document-upload-modal .metadata-value {
+  color: #495057;
+  text-align: right;
+  flex: 1;
+  margin-left: 10px;
+  word-break: break-word;
+}
+
+.document-upload-modal .uuid-text, 
+.document-upload-modal .hash-text {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+  background-color: #f1f3f4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #5f6368;
+}
+
+.document-upload-modal .file-url-link {
+  color: var(--primaryColor);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.document-upload-modal .file-url-link:hover {
+  color: var(--secondaryColor);
+  text-decoration: underline;
+}
+
+/* Parsed Metadata in Modal */
+.document-upload-modal .parsed-metadata {
+  background-color: var(--neutralColor);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.document-upload-modal .parsed-metadata.editing {
+  border-left: 4px solid var(--primaryColor);
+}
+
+/* Reporting Questions in Modal */
+.document-upload-modal .reporting-questions {
+  background-color: var(--neutralColor);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  border-left: 4px solid var(--warningColor);
+  margin-top: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Action Buttons in Modal */
+.document-upload-modal .action-buttons {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #dee2e6;
+}
+
+.document-upload-modal .action-buttons .btn {
+  min-width: 140px;
+  font-weight: 600;
+}
+
+/* Button Styles in Modal */
+.document-upload-modal .btn {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.document-upload-modal .btn-primary {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.document-upload-modal .btn-primary:hover, 
+.document-upload-modal .btn-primary:focus {
+  background-color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.document-upload-modal .btn-outline-primary {
+  color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
+.document-upload-modal .btn-outline-primary:hover,
+.document-upload-modal .btn-outline-primary:focus {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+  color: var(--neutralColor);
+  transform: translateY(-1px);
+}
+
+.document-upload-modal .btn-success {
+  background-color: var(--successColor);
+  border-color: var(--successColor);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.document-upload-modal .btn-success:hover,
+.document-upload-modal .btn-success:focus {
+  background-color: #218838;
+  border-color: #1e7e34;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.document-upload-modal .btn-outline-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.document-upload-modal .btn-outline-secondary:hover,
+.document-upload-modal .btn-outline-secondary:focus {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: var(--neutralColor);
+  transform: translateY(-1px);
+}
+
+.document-upload-modal .btn-lg {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.document-upload-modal .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(63, 136, 165, 0.25) !important;
+}
+
+.document-upload-modal .btn:disabled {
+  opacity: 0.65;
+  transform: none !important;
+}
+
+/* Progress Bar in Modal */
+.document-upload-modal .progress {
+  height: 12px;
+  background-color: #e9ecef;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.document-upload-modal .progress-bar {
+  background-color: var(--primaryColor);
+  transition: width 0.3s ease;
+  font-size: 0.75rem;
+}
+
+/* Alert Styles in Modal */
+.document-upload-modal .alert {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.document-upload-modal .alert-success {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: var(--successColor);
+  border-left: 4px solid var(--successColor);
+}
+
+.document-upload-modal .alert-danger {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: var(--errorColor);
+  border-left: 4px solid var(--errorColor);
+}
+
+.document-upload-modal .alert-info {
+  background-color: rgba(31, 158, 209, 0.1);
+  color: var(--secondaryColor);
+  border-left: 4px solid var(--secondaryColor);
+}
+
+/* Add to Reporting Section in Modal */
+.document-upload-modal .add-to-reporting-section {
+  background-color: var(--neutralColor);
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-left: 3px solid var(--primaryColor);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.document-upload-modal .add-to-reporting-section .form-check-input {
+  width: 1.2em;
+  height: 1.2em;
+  margin-top: 0.1em;
+  border: 2px solid #dee2e6;
+  border-radius: 4px;
+  background-color: var(--neutralColor);
+  transition: all 0.2s ease;
+}
+
+.document-upload-modal .add-to-reporting-section .form-check-input:checked {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
+.document-upload-modal .add-to-reporting-section .form-check-label {
+  font-weight: 600;
+  color: var(--tertiaryColor);
+  margin-left: 8px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1.4;
+}
+
+.document-upload-modal .add-to-reporting-section .form-check-label:hover {
+  color: var(--primaryColor);
+}
+
+/* Add Readings Section in Modal */
+.document-upload-modal .add-readings-section {
+  background-color: var(--neutralColor);
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-left: 3px solid var(--primaryColor);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.document-upload-modal .add-readings-section .form-check-input {
+  width: 1.2em;
+  height: 1.2em;
+  margin-top: 0.1em;
+  border: 2px solid #dee2e6;
+  border-radius: 4px;
+  background-color: var(--neutralColor);
+  transition: all 0.2s ease;
+}
+
+.document-upload-modal .add-readings-section .form-check-input:checked {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
+.document-upload-modal .add-readings-section .form-check-label {
+  font-weight: 600;
+  color: var(--tertiaryColor);
+  margin-left: 8px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1.4;
+}
+
+.document-upload-modal .add-readings-section .form-check-label:hover {
+  color: var(--primaryColor);
+}
+
+/* Reading Calculation Section */
+.document-upload-modal .readings-calculation {
+  background-color: var(--neutralColor);
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--successColor);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.document-upload-modal .readings-calculation h6 {
+  color: var(--tertiaryColor);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.document-upload-modal .reading-item {
+  text-align: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.document-upload-modal .reading-item strong {
+  color: var(--tertiaryColor);
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.document-upload-modal .reading-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+
+.document-upload-modal .reading-value.text-primary {
+  color: var(--successColor) !important;
+  font-size: 1.3rem;
+}
+
+/* Spinner in Modal */
+.document-upload-modal .spinner-border {
+  color: var(--primaryColor);
+}
+
+/* Form Controls in Modal */
+.document-upload-modal .form-control, 
+.document-upload-modal .form-select {
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+  padding: 10px 12px;
+  transition: all 0.2s ease;
+}
+
+.document-upload-modal .form-control:focus, 
+.document-upload-modal .form-select:focus {
+  border-color: var(--primaryColor);
+  box-shadow: 0 0 0 0.2rem rgba(63, 136, 165, 0.25);
+}
+
+.document-upload-modal .form-label {
+  font-weight: 600;
+  color: var(--tertiaryColor);
+  margin-bottom: 6px;
+}
+
+/* Form Validation in Modal */
+.document-upload-modal .form-control.is-invalid {
+  border-color: var(--errorColor);
+}
+
+.document-upload-modal .form-control.is-invalid:focus {
+  border-color: var(--errorColor);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.document-upload-modal .invalid-feedback {
+  color: var(--errorColor);
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+/* Responsive Design for Modal */
+@media (max-width: 1200px) {
+  .document-upload-modal .modal-dialog {
+    max-width: 95%;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .document-upload-modal .modal-dialog {
+    max-width: 98%;
+    margin: 0.5rem auto;
+  }
+  
+  .document-upload-modal .modal-body {
+    padding: 20px;
+    max-height: 80vh;
+  }
+  
+  .document-upload-modal .modal-header {
+    padding: 15px 20px;
+  }
+  
+  .document-upload-modal .modal-footer {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .document-upload-modal .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    height: 100vh;
+  }
+  
+  .document-upload-modal .modal-content {
+    height: 100vh;
+    border-radius: 0;
+  }
+  
+  .document-upload-modal .modal-body {
+    padding: 15px;
+    max-height: calc(100vh - 140px);
+  }
+  
+  .document-upload-modal .modal-title {
+    font-size: 1.3rem;
+  }
+  
+  .document-upload-modal .document-form {
+    padding: 20px;
+  }
+  
+  .document-upload-modal .parsed-document-details {
+    padding: 20px;
+  }
+  
+  .document-upload-modal .file-upload-area {
+    padding: 20px 15px !important;
+  }
+  
+  .document-upload-modal .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .document-upload-modal .action-buttons .btn {
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .document-upload-modal .metadata-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .document-upload-modal .metadata-item strong {
+    min-width: auto;
+    margin-bottom: 4px;
+  }
+  
+  .document-upload-modal .metadata-value {
+    text-align: left;
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .document-upload-modal .uuid-text, 
+  .document-upload-modal .hash-text {
+    font-size: 0.75em;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .document-upload-modal .file-input-label {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .document-upload-modal .modal-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .document-upload-modal .modal-footer .d-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .document-upload-modal .modal-footer .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .document-upload-modal .file-upload-area h5 {
+    font-size: 1.1rem;
+  }
+  
+  .document-upload-modal .file-upload-area p {
+    font-size: 0.9rem;
+  }
+  
+  .document-upload-modal .btn-lg {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  .document-upload-modal .parsed-document-details h5 {
+    font-size: 1.2rem;
+  }
+  
+  .document-upload-modal .parsed-document-details h6 {
+    font-size: 1rem;
+  }
+  
+  .document-upload-modal .reading-item {
+    padding: 12px;
+  }
+  
+  .document-upload-modal .reading-value {
+    font-size: 1.1rem;
+  }
+  
+  .document-upload-modal .reading-value.text-primary {
+    font-size: 1.2rem;
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  .document-upload-modal .btn,
+  .document-upload-modal .file-input-label,
+  .document-upload-modal .file-upload-area,
+  .document-upload-modal .upload-success,
+  .document-upload-modal .fadeIn {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .document-upload-modal .file-upload-area {
+    border-color: #000;
+  }
+  
+  .document-upload-modal .file-input-label {
+    border: 2px solid #000;
+  }
+  
+  .document-upload-modal .modal-content {
+    border: 2px solid #000;
+  }
+}
+
+/* Loading States */
+.document-upload-modal .upload-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.document-upload-modal .form-loading {
+  opacity: 0.6;
+  pointer-events: none;
+}

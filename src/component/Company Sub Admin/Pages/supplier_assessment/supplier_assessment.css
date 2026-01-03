@@ -1,0 +1,126 @@
+.new__assesment_btn__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+.response {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.response h4 {
+  color: #1f9ed1;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.image1 {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  max-width: 650px;
+  height: 100%;
+  min-height: 550px;
+  margin: 0 0 0 -10%;
+}
+
+.enviornmentt {
+  position: absolute;
+  top: 0;
+  left: 250px;
+}
+
+.div1 {
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  padding: 20px;
+  z-index: 999;
+  left: 45rem;
+}
+
+.div2 {
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  padding: 20px;
+  z-index: 999;
+  left: 55rem;
+}
+
+.div1 h4 {
+  color: #233076;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.div1 h6 {
+  font-size: 14px;
+  line-height: 18px;
+  color: #4f5367;
+}
+
+.social_capital {
+  position: absolute;
+  left: 336px;
+  top: 122px;
+}
+
+.leadership_governance {
+  position: absolute;
+  bottom: 0;
+  top: 298px;
+  left: 251px;
+}
+
+.human_capital {
+  position: absolute;
+  bottom: 0;
+  left: 35px;
+}
+
+.bussiness_model {
+  position: absolute;
+  left: 0;
+  top: 129px;
+}
+
+.cyber_Digital {
+  position: absolute;
+  right: 0;
+  left: 30px;
+  width: 217px;
+  height: 217px;
+}
+
+.div1 img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -90px;
+  transform: translateX(-48rem);
+}
+
+.imgIndex {
+  z-index: 9999;
+}
+
+.chart-de {
+  width: 100%;
+  max-width: 540px;
+  height: 500px;
+  position: relative;
+}

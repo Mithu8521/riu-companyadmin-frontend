@@ -1,0 +1,238 @@
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: "100%" !important;
+}
+
+.topcompo {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 15px;
+  /* height: 12vh; */
+}
+
+.firsthalfprogress {
+  width: 58%;
+  margin-right: 10px;
+}
+
+.circular-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* Make the checkbox circular */
+  appearance: none;
+  /* Remove default styling */
+  border: 2px solid #000;
+  /* Add a border */
+  position: relative;
+  /* Needed for positioning the inner circle */
+  cursor: pointer;
+  /* Pointer cursor for better UX */
+}
+
+.circular-checkbox::after {
+  content: "";
+  width: 10px;
+  /* Size of the inner circle */
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  /* Color of the inner circle */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 0.2s ease-in-out;
+  /* Smooth transition */
+}
+
+.circular-checkbox:checked::after {
+  opacity: 1;
+  /* Show the inner circle when checked */
+}
+
+
+.firsthalfprogresss {
+  width: 38% !important;
+  overflow: auto;
+  margin-right: 10px;
+}
+
+.secondhalfprogresss {
+  margin-left: 10px;
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+
+
+.secondhalfprogress {
+  margin-left: 10px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.framework {
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.frameworkHeader {
+  color: #011627;
+  font-size: 17px;
+  margin-left: 10px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+input[type="radio"] {
+  appearance: none;
+  margin-left: 10px;
+  margin-right: 5px;
+  width: 15px;
+  /* Adjusted size */
+  height: 15px;
+  /* Adjusted size */
+  border: 1px solid #11546f;
+  /* Added border color for visibility */
+  border-radius: 50%;
+  outline: none;
+  transition: 0.5s;
+  background: #caeaed;
+  position: relative;
+  /* Added position relative */
+}
+
+input[type="radio"]:before {
+  content: "";
+  display: block;
+  width: 50%;
+  /* Adjusted size relative to the radio button */
+  height: 50%;
+  /* Adjusted size relative to the radio button */
+  margin: 25% auto;
+  border-radius: 50%;
+  background: transparent;
+  /* Ensure the default state is transparent */
+  position: absolute;
+  /* Positioned absolutely inside the radio button */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Center it inside the radio button */
+}
+
+input[type="radio"]:checked:before {
+  background: #11546f;
+  color: white;
+}
+
+
+.radioflex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.grouping {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.groupingtext {
+  color: "black" !important;
+  font-size: 20 !important;
+  font-family: "Poppins";
+  font-weight: "500" !important;
+  word-wrap: "break-word" !important;
+}
+
+.secondarycont {
+  margin-top: 20px;
+}
+
+/* Add these styles to your progress.css file */
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-component {
+  height: 100%;
+  border-radius: 10px;
+  /* Add any existing styling for your component boxes */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Height classes for different rows */
+.height-60 {
+  height: 60vh;
+}
+
+.height-40 {
+  height: 40vh;
+}
+
+.height-500 {
+  height: 500px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 992px) {
+  .d-flex.flex-row {
+    flex-direction: column !important;
+  }
+
+  .dashboard-component {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .height-60, .height-40, .height-500 {
+    height: auto;
+  }
+}
+
+/* Existing classes - make sure they're compatible */
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.secondarycont {
+  margin-bottom: 20px;
+}
+
+.topcompo {
+  margin-bottom: 20px;
+}

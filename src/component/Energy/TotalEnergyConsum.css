@@ -1,0 +1,43 @@
+.whitecont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.ener-title {
+  color: #011627;
+  font-size: 20px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  padding-left: 20px;
+  margin-top: 15px;
+  word-wrap: break-word;
+}
+
+/* TotalEnergyConsum.css */
+
+#dropdown-basic-button {
+  background: white !important;
+  border-color: #3F88A5 !important;
+  color: black !important;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#dropdown-basic-button:focus {
+  box-shadow: none !important;
+}
+
+.dropdown-menu {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.dropdown-item.active {
+  background-color: #f4f6f9 !important;
+  color: #3F88A5 !important;
+}
